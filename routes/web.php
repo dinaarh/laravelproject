@@ -20,3 +20,9 @@ Route::get('/', function () {
 Route::get('/dina', function () {
     return view('dina');
 });
+
+Route::get('/siswa', function () {
+    $nama = 'Dina Rahmawati';
+    $nilai = [100, 95, 49, 97, 48];
+    return view('siswa', compact('nama','nilai'));
+});
